@@ -20,16 +20,12 @@ function initializeCode() {
     const dataPromise = await fetch(url + q);
     const dataJSON = await dataPromise.json();
 
-    console.log(dataJSON);
-
     dataJSON.forEach((show) => {
       let div = document.createElement("div");
       let div2 = document.createElement("div");
       let img = document.createElement("img");
       let h1 = document.createElement("h1");
       let p = document.createElement("p");
-
-      console.log(show.show.image);
 
       div.classList.add("show-data");
       div2.classList.add("show-info");

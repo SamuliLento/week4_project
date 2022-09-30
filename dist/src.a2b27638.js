@@ -163,14 +163,12 @@ function initializeCode() {
 
             case 7:
               dataJSON = _context.sent;
-              console.log(dataJSON);
               dataJSON.forEach(function (show) {
                 var div = document.createElement("div");
                 var div2 = document.createElement("div");
                 var img = document.createElement("img");
                 var h1 = document.createElement("h1");
                 var p = document.createElement("p");
-                console.log(show.show.image);
                 div.classList.add("show-data");
                 div2.classList.add("show-info");
                 img.src = show.show.image.medium;
@@ -183,7 +181,7 @@ function initializeCode() {
                 body.appendChild(div);
               });
 
-            case 10:
+            case 9:
             case "end":
               return _context.stop();
           }
